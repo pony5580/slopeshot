@@ -1,0 +1,495 @@
+@charset "UTF-8";
+/*---------------------------------------------------------------
+-----------------------------------------------------------------
+slopeshot style CSS
+The date     : 2008.4.25
+Last up date : 2008.4.25
+
+-----------------------------------------------------------------
+construction
+
+#container (100%)
+	├#hd (100%)
+	│└.wrp (935px)
+	│
+	├#flash (100%) top page only
+	│
+	├#bd (100%)
+	│└.wrp (935px)
+	│	├.mainCol (710px)
+	│	└.subCol (225px)
+	│
+	└#ft (100%)
+		└.wrp (935px)
+
+-----------------------------------------------------------------
+		--  YUI
+		
+		-- base style
+		
+		-- basic layout sytle
+		
+		-- 2Column layout sytle
+		
+		-- header sytle
+		
+		-- footer sytle
+		
+		-- breadcrumb navigation sytle
+		　　
+		-- clearfix
+-----------------------------------------------------------------
+---------------------------------------------------------------*/
+
+/*==================================================================
+
+  YUI
+
+================================================================== */
+/*
+Copyright (c) 2009, Yahoo! Inc. All rights reserved.
+Code licensed under the BSD License:
+http://developer.yahoo.net/yui/license.txt
+version: 2.8.0r4
+*/
+html{color:#000;background:#FFF;}body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,code,form,fieldset,legend,input,button,textarea,p,blockquote,th,td{margin:0;padding:0;}table{border-collapse:collapse;border-spacing:0;}fieldset,img{border:0;}address,caption,cite,code,dfn,em,strong,th,var,optgroup{font-style:inherit;font-weight:inherit;}del,ins{text-decoration:none;}li{list-style:none;}caption,th{text-align:left;}h1,h2,h3,h4,h5,h6{font-size:100%;font-weight:normal;}q:before,q:after{content:'';}abbr,acronym{border:0;font-variant:normal;}sup{vertical-align:baseline;}sub{vertical-align:baseline;}legend{color:#000;}input,button,textarea,select,optgroup,option{font-family:inherit;font-size:inherit;font-style:inherit;font-weight:inherit;}input,button,textarea,select{*font-size:100%;}body{font:13px/1.231 arial,helvetica,clean,sans-serif;*font-size:small;*font:x-small;}select,input,button,textarea,button{font:99% arial,helvetica,clean,sans-serif;}table{font-size:inherit;font:100%;}pre,code,kbd,samp,tt{font-family:monospace;*font-size:108%;line-height:100%;}
+
+/*==================================================================
+//
+//  --  base style
+//
+================================================================== */
+h1 {
+	font-size:180%;  
+}
+h2 {
+	font-size:160%; 
+}
+h3 {
+	font-size:140%;  
+}
+h1,h2,h3 {
+	margin:0;
+}
+strong {
+	font-weight:bold; 
+}
+abbr,acronym {
+	border-bottom:1px dotted #000;
+	cursor:help;
+} 
+em {
+	font-style:normal;
+	color: #f40000;
+}
+th {
+	font-weight:bold;
+	text-align:center;
+}
+caption {
+	margin-bottom:.5em;
+	text-align:center;
+}
+/* setting a consistent width, 160px; 
+   control of type=file still not possible */
+input[type=text],input[type=password],textarea{width:12.25em;*width:11.9em;}
+
+
+/*	link style 
+============================================================*/
+a {
+	color: #0dc7f1;
+	text-decoration: none;
+}
+
+a:link {
+	color: #0dc7f1;
+	text-decoration: none;
+}
+
+a:visited {
+	color: #007fff;
+	text-decoration: none;
+}
+
+a:hover {
+	color: #007fff;
+	text-decoration: none;
+}
+
+a:active {
+	color: #007fff;
+	text-decoration: none;
+}
+
+.mainCol a:hover {
+	text-decoration: underline;
+}
+
+/*==================================================================
+//
+//  --  base class style
+//
+================================================================== */
+.mb20 {
+	margin-bottom: 20px!important;
+}
+
+.mb17 {
+	margin-bottom: 17px!important;
+}
+
+.mb14 {
+	margin-bottom: 14px!important;
+}
+
+.mb40 {
+	margin-bottom: 40px!important;
+}
+
+.mb37 {
+	margin-bottom: 37px!important;
+}
+
+.ml10 {
+	margin-left: 10px!important;
+}
+
+.lh1 {
+	line-height: 1!important;
+}
+
+/*==================================================================
+//
+//  --  basic layout sytle
+//
+================================================================== */
+html { 
+	height: 100%;
+	background: #fff;
+}
+
+body{
+  height:100%;
+	font-family:'ヒラギノ角ゴ Pro W3','Hiragino Kaku Gothic Pro','メイリオ',Meiryo,'ＭＳ Ｐゴシック',sans-serif;
+	behavior:url("/shared/css/csshover.htc");
+}
+
+#container {
+	position: relative;
+	width: 860px;
+	height:100%;
+	min-height: 100%;
+	margin: 0px auto;
+	padding: 0px 20px;
+	text-align:left;
+	font-size: 77%;
+	background: #fff;
+}
+
+body > #container {
+    height: auto;
+}
+
+#hd{
+	padding: 40px 0 20px;
+	background: #fff url(../images/base/bg_hd.gif) bottom no-repeat;
+}
+
+#bd{
+	padding: 0px 0 30px;
+	background: #fff;
+}
+
+#ft {
+	z-index: 1;
+	position: absolute;
+	height: 30px;
+	width: 860px;
+	bottom:0;
+}
+
+
+/*==================================================================
+//
+//  --  3Column layout sytle
+//
+================================================================== */
+#bd #contents {
+	float: left;
+	width: 650px;
+	background: #fff;
+}
+
+
+#bd #ex {
+	float: right;
+	width: 190px;
+}
+
+
+
+/*==================================================================
+//
+//  -- header sytle
+//
+================================================================== */
+#hd h1 {
+	display: block;
+	width: 160px;
+	height: 90px;
+	text-indent: -9999px;
+	overflow: hidden;
+	margin-bottom: 20px;
+	background: url(../images/base/id.gif) no-repeat;
+}
+
+
+
+
+/* top hover
+------------*/
+
+#top li#naviHome a:hover {
+	background-position: 0 -80px;
+}
+
+#top li#naviInfo a:hover {
+	background-position: -90px -80px;
+}
+
+#top li#naviEntry a:hover {
+	background-position: -180px -80px;
+}
+
+#top li#naviNews a:hover {
+	background-position: -270px -80px;
+}
+
+#top li#naviAbout a:hover {
+	background-position: -360px -80px;
+}
+
+#top li#naviArchive a:hover {
+	background-position: -450px -80px;
+}
+
+#top li#naviMypage a:hover {
+	background-position: -540px -80px;
+}
+
+/* top active
+------------*/
+
+#naviGlobal .active a {
+	cursor: default;
+}
+
+#top #naviGlobal #naviHome.active a {
+	background-position: 0px -80px;
+}
+
+
+/* hover
+------------*/
+
+li#naviHome a:hover {
+	background-position: 0 -60px;
+}
+
+li#naviInfo a:hover {
+	background-position: -90px -60px;
+}
+
+li#naviEntry a:hover {
+	background-position: -180px -60px;
+}
+
+li#naviNews a:hover {
+	background-position: -270px -60px;
+}
+
+li#naviAbout a:hover {
+	background-position: -360px -60px;
+}
+
+li#naviArchive a:hover {
+	background-position: -450px -60px;
+}
+
+li#naviMypage a:hover {
+	background-position: -540px -60px;
+}
+
+/* active
+------------*/
+
+#naviGlobal #naviInfo.active a {
+	background-position: -90px -60px;
+}
+
+#naviGlobal #naviEntry.active a {
+	background-position: -180px -60px;
+}
+
+#naviGlobal #naviNews.active a {
+	background-position: -270px -60px;
+}
+
+#naviGlobal #naviAbout.active a {
+	background-position: -360px -60px;
+}
+
+#naviGlobal #naviArchive.active a {
+	background-position: -450px -60px;
+}
+
+#naviGlobal #naviMypage.active a {
+	background-position: -540px -60px;
+}
+
+
+/*==================================================================
+//
+//  -- footer sytle
+//
+================================================================== */
+#ft .wrp {
+	position: relative;
+	height: 30px;
+	background:url(../images/base/bg_ft.gif) top no-repeat;
+}
+
+#ft .wrp ul {
+	margin: 0px 0 18px 90px;
+	padding: 19px 0 0 0;
+}
+
+#ft .wrp ul li {
+	float: left;
+}
+
+#ft .wrp ul li a {
+	display: block;
+	height: 15px;
+	margin: 0 20px 0 0;
+	text-indent: -9999px;
+	overflow: hidden;
+	font-size: 1%;
+	background: url(../../images/footer/navi_sub.gif) no-repeat;
+}
+
+#ft .wrp ul li#naviSitemap a {
+	width: 53px;
+	background-position: 0 0;
+}
+
+#ft .wrp ul li#naviPrivacy a {
+	width: 89px;
+	background-position: -73px 0px;
+}
+
+#ft .wrp ul li#naviTerms a {
+	width: 64px;
+	background-position: -182px 0px;
+}
+
+#ft .wrp ul li#naviContact a {
+	width: 58px;
+	margin: 0;
+	background-position: -265px 0px;
+}
+
+#ft .wrp ul li#naviSitemap a:hover {
+	background-position: 0 -15px;
+}
+
+#ft .wrp ul li#naviPrivacy a:hover {
+	background-position: -73px -15px;
+}
+
+#ft .wrp ul li#naviTerms a:hover {
+	background-position: -182px -15px;
+}
+
+#ft .wrp ul li#naviContact a:hover {
+	background-position: -265px -15px;
+}
+
+
+#ft .wrp #copy {
+	width: 47px;
+	height: 7px;
+	margin: 0 0 0 90px;
+	text-indent: -9999px;
+	font-size: 1%;
+	background: url(../../images/footer/copy.gif) no-repeat bottom;
+}
+
+#ft .wrp #pagetop {
+	position: absolute;
+	right: 152px ;
+	top: 23px;
+}
+
+#ft .wrp #pagetop a {
+	display: block;
+	width: 63px;
+	height: 7px;
+	text-indent: -9999px;
+	overflow: hidden;
+	background: url(../../images/footer/btn_pagetop.gif) no-repeat;
+}
+
+#ft .wrp #pagetop a:hover {
+	background-position: 0px -7px;
+}
+
+
+/*==================================================================
+//
+//  -- breadcrumb navigation sytle
+//
+================================================================== */
+#bc {
+	margin: 1px 0 0;
+}
+
+#bc .wrp {
+	color: #FFFFFF;
+	padding: 9px 0;
+}
+
+#bc,
+#bc .wrp{
+	background: #14151b;
+}
+
+#bc .wrp ul {
+	margin-left: 90px;
+}
+
+#bc .wrp li {
+	display: inline;
+}
+
+/*==================================================================
+//
+//  --  clearfix
+//
+================================================================== */
+.clearfix:after,
+#bd .wrp:after
+{
+  content: '[.]';
+  visibility: hidden;
+  clear: both;
+  display: block;
+  height: 0;
+}
+
+.clearfix,
+#bd .wrp
+{
+  zoom: 1;
+}

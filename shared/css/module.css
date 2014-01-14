@@ -1,0 +1,163 @@
+@charset "UTF-8";
+/*---------------------------------------------------------------
+-----------------------------------------------------------------
+geisai style CSS
+The date     : 2008.4.28
+Last up date : 2008.4.28
+
+-----------------------------------------------------------------
+-----------------------------------------------------------------
+---------------------------------------------------------------*/
+
+/*==================================================================
+//
+//  -- navigator
+//
+================================================================== */
+#navi-main { padding-bottom:23px; background: url(../images/base/mark/navi.gif) no-repeat bottom; }
+#navi-main ul { margin-bottom: 24px;}
+#navi-main li {
+	margin-top: 2px;
+	width: 260px;
+	height: 65px;
+	text-indent: -9999px;
+	line-height:1;
+	background:url(../images/base/main-navi.gif) no-repeat;
+}
+#navi-main li a{
+	display: block;
+	width: 260px;
+	height: 65px;
+	text-indent: -9999px;
+	line-height:1;
+	overflow: hidden;
+	background:url(../images/base/main-navi.gif) no-repeat;
+}
+
+#navi-main li#navi01 a{}
+#navi-main li#navi02 a{ background-position: 0px -65px;}
+#navi-main li#navi03 a{ height: 66px; background-position: 0px -132px;}
+#navi-main li#navi04 a{ height:23px; width:140px; background-position: 0px -200px;}
+#navi-main li#navi05 a{ height:23px; width:63px; background-position: 0px -225px;}
+
+#navi-main li#navi01 a:hover{ background-position: -260px 0px;}
+#navi-main li#navi02 a:hover{ background-position: -260px -65px;}
+#navi-main li#navi03 a:hover{ background-position: -260px -132px;}
+#navi-main li#navi04 a:hover{ background-position: -260px -200px;}
+#navi-main li#navi05 a:hover{ background-position: -260px -225px;}
+
+#navi-main li#navi01 { background-position: -260px 0px;}
+#navi-main li#navi02 { background-position: -260px -65px;}
+#navi-main li#navi03 { height: 66px; background-position: -260px -132px;}
+#navi-main li#navi04 { height:23px; width:140px; background-position: -260px -200px;}
+#navi-main li#navi05 { height:23px; width:63px; background-position: -260px -225px;}
+
+#navi-main .address {
+	width: 260px;
+	height: 51px;
+	text-indent: -9999px;
+	line-height: 1;
+	background: url(../images/base/address.gif) no-repeat;
+}
+
+/*==================================================================
+//
+//  -- breadcrumb
+//
+================================================================== */
+#breadcrumb {
+	font-size: 80%;
+	letter-spacing: 1px;
+	padding: 5px 0px;
+	margin-bottom: 30px;
+	line-height: 1;
+	border-bottom: 1px solid #ccc;
+}
+
+#breadcrumb li { float: left; }
+
+/*==================================================================
+//
+//  -- calendar
+//
+================================================================== */
+.calendar {
+	width: 100%;
+	line-height: 1;
+	margin-bottom: 30px;
+}
+
+.calendar caption {
+	position: relative;
+	line-height: 1;
+	padding:0px 0 20px;
+}
+
+.calendar caption a{
+	color:#000000;
+}
+
+.calendar caption span {
+	cursor: pointer;
+}
+
+.calendar caption span.calendarMonth {
+	margin: 0 15px;
+	cursor: default;
+}
+
+.calendar .sunday,
+.calendar .holiday
+{
+	color: #f40000;
+}
+
+.calendar .today
+{
+	/*border: 1px solid #fff;*/
+}
+
+.calendar .entry
+{
+	color: #CC6600;
+	background: url(../images/info/entry.gif) no-repeat center;
+}
+
+.calendar .entry a {
+	color: #fff;
+}
+
+.calendar th {
+	font-weight: normal;
+	padding-bottom: 9px;
+}
+
+.calendar td {
+	padding: 9px 0;
+	text-align: center;
+}
+
+.calendar td a {
+	color: #99CC00;
+}
+
+/*==================================================================
+//
+//  --  clearfix
+//
+================================================================== */
+#bd .wrp .mainCol .section .box:after,
+#breadcrumb ul:after
+{
+  content: '[.]';
+  visibility: hidden;
+  clear: both;
+  display: block;
+  height: 0;
+}
+
+#bd .wrp .mainCol .section .box,
+#breadcrumb ul
+{
+  zoom: 1;
+}

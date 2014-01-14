@@ -1,0 +1,276 @@
+@charset "UTF-8";
+/*---------------------------------------------------------------
+-----------------------------------------------------------------
+slopeshot style CSS
+The date     : 2008.4.25
+Last up date : 2008.4.25
+
+-----------------------------------------------------------------
+		-- TOP
+		
+		-- INFORMATION
+		
+		　　
+		-- clearfix
+-----------------------------------------------------------------
+---------------------------------------------------------------*/
+
+/*==================================================================
+//
+//  --  COMMON
+//
+================================================================== */
+#main, #secondary {
+	float: right;
+	display: inline;
+}
+
+#main {
+	width: 590px;
+	margin-left: 10px;
+}
+
+#secondary {
+	width: 260px;
+}
+
+/*==================================================================
+//
+//  --  TOP
+//
+================================================================== */
+#top #bd #mainImg{
+	padding-bottom: 1px;
+	background: url(../images/base/mark/main-img.gif) no-repeat bottom;
+}
+
+#top #bd #mainImg img { vertical-align: text-bottom; }
+
+#top #bd #content { margin-top: 30px; }
+
+#top #bd #content .newsWrp { margin-bottom: 50px}
+
+#top #bd #content .newsWrp h2 {
+	width: 590px;
+	height: 14px;
+	text-indent: -9999px;
+	line-height: 1;
+	background: url(../images/base/title/latestNews.gif) no-repeat;
+}
+
+#top #bd #content .newsWrp .article {
+	margin: 30px 0px 0px;
+	cursor: pointer;
+}
+
+#top #bd #content .newsWrp .article dt {
+	float: left;
+	width: 20px;
+	height: 7px;
+	text-indent: -9999px;
+	line-height: 1;
+	font-size: 1%;
+}
+#top #bd #content .newsWrp .article dt.date { background: url(../images/base/title/entry-date.gif) no-repeat;}
+#top #bd #content .newsWrp .article dt.title { background: url(../images/base/title/entry-title.gif) no-repeat;}
+#top #bd #content .newsWrp .article dt.body { background: url(../images/base/title/entry-body.gif) no-repeat;}
+
+#top #bd #content .newsWrp .article dd{ margin-left: 40px; line-height:1; margin-bottom:10px; letter-spacing:1px;}
+#top #bd #content .newsWrp .article dd.date { font-size:80%; }
+#top #bd #content .newsWrp .article dd.title a { font-weight: bold; color:#000;}
+#top #bd #content .newsWrp .article dd.body {
+		margin-bottom: 0px;
+		width: 400px;
+		overflow:hidden;
+		 white-space: nowrap;
+		text-overflow: ellipsis;   /* IE6以上 */
+   -webkit-text-overflow: ellipsis; /* Safari */
+   -o-text-overflow: ellipsis;   /* Opera */
+}
+/*==================================================================
+//
+//  --  INFORMATION
+//
+================================================================== */
+#info #bd{padding: 30px 0 30px;}
+
+#info #bd h2 {
+	width: 149px;
+	height: 15px;
+	text-indent: -9999px;
+	margin-bottom: 20px;
+	background: url(../images/info/title.gif) no-repeat;
+}
+
+#bd #contents .entryWrp{
+	margin-bottom: 80px;
+}
+
+/* info */
+
+#bd #contents .entryWrp .info {
+	float: left;
+	width:160px;
+}
+
+#bd #contents .entryWrp .info .date {
+	font-family:Georgia, "Times New Roman", Times, serif;
+	margin-bottom: 9px;
+}
+
+#bd #contents .entryWrp .info h3 {
+	font-size: 120%;
+	font-family: "ＭＳ Ｐ明朝", "細明朝体", "ヒラギノ明朝 Pro W3";
+	line-height: 1.3;
+	margin-bottom: 20px;
+}
+
+#bd #contents .entryWrp .info dl {
+	font-family:Georgia, "Times New Roman", Times, serif;
+	margin-bottom: 9px;
+}
+
+#bd #contents .entryWrp .info dt {
+	float: left;
+	width: 5em;
+}
+
+#bd #contents .entryWrp .info dd {
+	float: left;
+}
+
+/* body */
+
+#bd #contents .entryWrp .body {
+	float: right;
+	width: 470px;
+	margin-top: -4px;
+	font-size: 120%;
+	color: #333333;
+}
+
+#bd #contents .entryWrp .body p {
+	line-height: 1.6;
+	margin-bottom: 13px;
+}
+
+#bd #contents .entryWrp .body img {
+	padding: 10px;
+	background: url(../images/base/bg_img.gif);
+}
+
+#bd #contents .entryWrp .body a {
+	color: #FFFFFF;
+	padding: 0px 5px;
+	background: #333333;
+}
+
+#bd #contents .entryWrp .body a:hover {
+	background: #FF9900;
+}
+
+#bd #contents .entryWrp .body .mt-enclosure-image a,
+#bd #contents .entryWrp .body a.img
+{
+	line-height: 0;
+	padding: 0;
+	background: none;
+}
+
+/* Paging navi */
+
+#navi-paging {
+	text-align: right;
+	padding: 0px 0px 20px;
+	line-height:
+}
+
+#navi-paging a {
+	color: #000000;
+}
+
+#navi-paging a:hover {
+text-decoration: underline;
+}
+
+#navi-paging .current_page {
+	color: #FF9900;
+}
+
+
+/* ex col */
+#ex .module {
+	margin-bottom: 20px;
+}
+
+#ex .module ul {
+	margin: 10px 0 0 10px;
+}
+
+#ex .module li {
+	margin-bottom: 10px;
+}
+
+#ex .module li a {
+	color: #333333;
+}
+
+#ex .module li a:hover {
+	color: #999999;
+}
+
+#ex #entries h3 {
+	width: 190px;
+	height: 15px;
+	text-indent: -9999px;
+	background:url(../images/info/sub_entry.gif) no-repeat;
+}
+
+#ex #category h3 {
+	width: 190px;
+	height: 15px;
+	text-indent: -9999px;
+	background: url(../images/info/sub_cate.gif) no-repeat;
+}
+
+#ex #archives h3 {
+	width: 190px;
+	height: 15px;
+	text-indent: -9999px;
+	background: url(../images/info/sub_arch.gif) no-repeat;
+}
+
+#ex #rss h3 a {
+	display: block;
+	width: 190px;
+	height: 15px;
+	text-indent: -9999px;
+	overflow: hidden;
+	background: url(../images/info/rss.gif) no-repeat;
+}
+
+#ex #rss h3 a:hover {
+	background-position: bottom;
+}
+
+/*==================================================================
+//
+//  --  clearfix
+//
+================================================================== */
+#top #bd #bdwrp:after,
+#bd #contents .entryWrp:after,
+#bd #contents .entryWrp .info dl:after
+{
+  content: '[.]';
+  visibility: hidden;
+  clear: both;
+  display: block;
+  height: 0;
+}
+#top #bd #bdwrp,
+#bd #contents .entryWrp,
+#bd #contents .entryWrp .info dl
+{
+  zoom: 1;
+}
